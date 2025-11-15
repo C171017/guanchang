@@ -118,9 +118,9 @@ const PowerSimulator = () => {
           </div>
         </div>
         
-        <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-          <div className="flex items-center justify-center mb-8">
-            <div className="text-center">
+        <div className="bg-white rounded-lg shadow-md p-8 mb-8 overflow-hidden">
+          <div className="flex items-center justify-center mb-8 px-4">
+            <div className="text-center flex-shrink-0">
               <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mb-2 mx-auto">
                 <Users className="w-12 h-12 text-white" />
               </div>
@@ -128,20 +128,20 @@ const PowerSimulator = () => {
               <p className="text-sm text-slate-500">想让B...</p>
             </div>
             
-            <div className="mx-8">
+            <div className="mx-4 flex-shrink-0">
               <div className="flex items-center">
-                <div className="w-32 h-1 bg-slate-300"></div>
-                <Zap className={`w-8 h-8 mx-2 transition-all duration-500 ${
+                <div className="w-8 h-1 bg-slate-300"></div>
+                <Zap className={`w-6 h-6 mx-1.5 transition-all duration-500 ${
                   powerScore >= 50 ? 'text-yellow-500' : 'text-slate-300'
                 }`} />
-                <div className="w-32 h-1 bg-slate-300"></div>
+                <div className="w-8 h-1 bg-slate-300"></div>
               </div>
-              <p className="text-center text-sm font-medium text-slate-700 mt-2">
+              <p className="text-center text-sm font-medium text-slate-700 mt-2 whitespace-nowrap">
                 {currentScenario.action}
               </p>
             </div>
             
-            <div className="text-center">
+            <div className="text-center flex-shrink-0">
               <div className={`w-24 h-24 bg-purple-500 rounded-full flex items-center justify-center mb-2 mx-auto transition-transform duration-700 ${getComplianceAnimation()}`}>
                 <Users className="w-12 h-12 text-white" />
               </div>
